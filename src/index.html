@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cartão de Crédito</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de Cartão de Crédito</h1>
+        <form onsubmit="event.preventDefault(); validateCard();">
+            <label for="cardNumber">Digite o Número do Cartão:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Ex: 4111111111111111" required>
+            <button type="submit">Validar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
